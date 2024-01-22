@@ -47,7 +47,9 @@ namespace DR_TI_GIT_WPF
                     Convert.ToInt32(contents[0]),
                     Convert.ToInt32(contents[1]),
                     Convert.ToInt32(contents[2]),
-                    Convert.ToInt32(contents[3])
+                    Convert.ToInt32(contents[3]),
+                    Convert.ToInt32(contents[4]),
+                    Convert.ToInt32(contents[5])
                 ));
         }
     }

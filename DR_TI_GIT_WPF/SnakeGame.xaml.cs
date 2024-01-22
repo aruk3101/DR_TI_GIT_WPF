@@ -17,10 +17,12 @@ namespace DR_TI_GIT_WPF
         bool load = false;
         Point snake, food;
 
-        public SnakeGame(int sx, int sy, int fx, int fy)
+        public SnakeGame(int sx, int sy, int fx, int fy, int lenght, int points)
         {
             InitializeComponent();
             this.Loaded += SnakeGame_Loaded;
+            this.length = lenght;
+            this.points = points;
             snake = new Point(sx, sy);
             food = new Point(fx, fy);
             Rectangle ellipse = CreateRectangle(food, Brushes.Green);
@@ -29,6 +31,7 @@ namespace DR_TI_GIT_WPF
             canvas.Children.Insert(0, ellipse);
             length++;
             load = true;
+
         }
         public SnakeGame()
         {
@@ -148,7 +151,7 @@ namespace DR_TI_GIT_WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            File.WriteAllText("saves/" + DateTime.Now.ToString("yyyyMMddHHmmss"), $"{snake.X};{snake.Y};{food.X};{food.Y}");
+            File.WriteAllText("saves/" + DateTime.Now.ToString("yyyyMMddHHmmss"), $"{snake.X};{snake.Y};{food.X};{food.Y};{length};{points}");
             GoBack();
         }
 
