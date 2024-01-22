@@ -1,4 +1,8 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,13 +16,18 @@ using System.Windows.Shapes;
 namespace DR_TI_GIT_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy DashBoard.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class DashBoard : Page
     {
-        public MainWindow()
+        public DashBoard()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new SnakeGame());
         }
     }
 }
