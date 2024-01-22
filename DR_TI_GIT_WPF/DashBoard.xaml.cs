@@ -35,7 +35,7 @@ namespace DR_TI_GIT_WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.Navigate(new SnakeGame());
+            NavigationService.Navigate(new SnakeGame());
         }
 
         private void LoadButton(object sender, RoutedEventArgs e)
