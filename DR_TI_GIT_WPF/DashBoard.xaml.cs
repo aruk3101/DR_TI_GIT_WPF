@@ -38,7 +38,7 @@ namespace DR_TI_GIT_WPF
             //NavigationService.Navigate(new SnakeGame());
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void LoadButton(object sender, RoutedEventArgs e)
         {
             //if (lstview.SelectedItem == null) return;
             //FileInfo fileInfo = lstview.SelectedItem as FileInfo;

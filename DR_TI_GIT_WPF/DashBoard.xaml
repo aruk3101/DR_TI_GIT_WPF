@@ -12,6 +12,6 @@
         <Label Content="Dashboard"/>
         <Button Content="Nowa gra" Click="Button_Click"/>
         <ListView x:Name="lstview"></ListView>
-        <Button Content="Załaduj" Click="Button_Click_1"/>
+        <Button Content="Załaduj" Click="LoadButton"/>
     </StackPanel>
 </Page>
