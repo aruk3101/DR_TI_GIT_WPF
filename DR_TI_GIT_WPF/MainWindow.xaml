@@ -5,5 +5,5 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DR_TI_GIT_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="632" Width="600" ShowsNavigationUI="False" Source="MainPage.xaml">
+        Title="MainWindow" Height="632" Width="600" ShowsNavigationUI="False" Source="MainPage.xaml" Background="AliceBlue">
 </NavigationWindow>
