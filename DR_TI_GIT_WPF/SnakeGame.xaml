@@ -8,7 +8,12 @@
       Title="SnakeGame">
 
     <StackPanel>
-        <Button Height="32" Content="Zapisz" Click="Button_Click"></Button>
+        <StackPanel Height="32" Orientation="Horizontal">
+            <Button Content="Cofnj" Click="Button_Click_1"></Button>
+            <Button  Content="Zapisz" Click="Button_Click"></Button>
+            <Label x:Name="punkty" Content="0"></Label>
+        </StackPanel>
+       
         <Canvas x:Name="canvas" Height="600"></Canvas>
     </StackPanel>
 </Page>

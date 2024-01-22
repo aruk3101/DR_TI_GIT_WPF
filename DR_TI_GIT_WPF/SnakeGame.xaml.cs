@@ -89,6 +89,7 @@ namespace DR_TI_GIT_WPF
                 {
                     AddFood();
                 }
+            punkty.Content = $"Punkty: {points}/100";
         }
 
         private void GameWin()
@@ -100,6 +101,11 @@ namespace DR_TI_GIT_WPF
         private void GameLost()
         {
             MessageBox.Show("Przegrałeś");  
+            GoBack();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
             GoBack();
         }
 
