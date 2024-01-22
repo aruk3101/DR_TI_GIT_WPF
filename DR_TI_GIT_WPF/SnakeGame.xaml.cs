@@ -26,7 +26,7 @@ namespace DR_TI_GIT_WPF
             Loaded += SnakeGame_Loaded;
         }
 
-        private void snakeGame_Loaded(object sender, RoutedEventArgs e)
+        private void SnakeGame_Loaded(object sender, RoutedEventArgs e)
         {
             
         }
