@@ -8,7 +8,7 @@
       Title="SnakeGame">
 
     <StackPanel>
-        <Button Height="32" Content="Zapisz" Click="Button_Click"></Button>
-        <Canvas x:Name="canvas" Height="600"></Canvas>
+        <Button Height="32" Content="Zapisz" Click="Button_Click" Background="MediumPurple" Foreground="AliceBlue"></Button>
+        <Canvas x:Name="canvas" Height="600" Background="AliceBlue"></Canvas>
     </StackPanel>
 </Page>
