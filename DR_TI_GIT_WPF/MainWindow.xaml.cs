@@ -16,9 +16,11 @@ namespace DR_TI_GIT_WPF
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
+        public static MainWindow Instance;
         public MainWindow()
         {
             InitializeComponent();
+            Instance = this;
         }
     }
 }
