@@ -23,6 +23,12 @@ namespace DR_TI_GIT_WPF
         public SnakeGame()
         {
             InitializeComponent();
+            Loaded += SnakeGame_Loaded;
+        }
+
+        private void snakeGame_Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
