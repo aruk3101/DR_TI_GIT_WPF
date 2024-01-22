@@ -14,6 +14,7 @@ namespace DR_TI_GIT_WPF
         const int size = 32;
         DispatcherTimer timer;
         int width, height, stepx, stepy, length, points;
+        bool load = false;
         Point snake, food;
 
         public SnakeGame(int sx, int sy, int fx, int fy)
@@ -27,6 +28,7 @@ namespace DR_TI_GIT_WPF
                 canvas.Children.RemoveAt(0);
             canvas.Children.Insert(0, ellipse);
             length++;
+            load = true;
         }
         public SnakeGame()
         {
@@ -44,8 +46,8 @@ namespace DR_TI_GIT_WPF
                 IsEnabled = true
             };
             timer.Tick += GameRun;
-            if (food.X == 0 && food.Y == 0) AddFood();
-            if (snake.X == 0 && snake.Y == 0) snake = new Point(width / 2, height / 2);
+            if (!load) AddFood();
+            if (!load) snake = new Point(width / 2, height / 2);
             stepx = stepy = 0;
             MoveSnake();
             MainWindow.Instance.PreviewKeyDown += MainWindow_KeyDown;

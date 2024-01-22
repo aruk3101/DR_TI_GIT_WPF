@@ -40,16 +40,15 @@ namespace DR_TI_GIT_WPF
 
         private void LoadButton(object sender, RoutedEventArgs e)
         {
-            //if (lstview.SelectedItem == null) return;
-            //FileInfo fileInfo = lstview.SelectedItem as FileInfo;
-            //string[] contents = System.IO.File.ReadAllText(fileInfo.FullName).Split(';');
-            //NavigationService.Navigate(new SnakeGame(
-            //        Convert.ToInt32(contents[0]),
-            //        Convert.ToInt32(contents[1]),
-            //        Convert.ToInt32(contents[2]),
-            //        Convert.ToInt32(contents[3])
-            //    ));
-
+            if (lstview.SelectedItem == null) return;
+            FileInfo fileInfo = lstview.SelectedItem as FileInfo;
+            string[] contents = System.IO.File.ReadAllText(fileInfo.FullName).Split(';');
+            NavigationService.Navigate(new SnakeGame(
+                    Convert.ToInt32(contents[0]),
+                    Convert.ToInt32(contents[1]),
+                    Convert.ToInt32(contents[2]),
+                    Convert.ToInt32(contents[3])
+                ));
         }
     }
 }
